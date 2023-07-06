@@ -1,3 +1,7 @@
-<h1 class="text-6xl font-bold underline">
-  Hello world!
-</h1>
+<script>
+	import BottomNavBar from './BottomNavBar.svelte';
+	import TopNavBar from './TopNavBar.svelte';
+</script>
+
+<TopNavBar />
+<BottomNavBar />
