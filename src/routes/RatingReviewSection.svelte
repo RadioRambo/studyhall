@@ -64,7 +64,7 @@
 					<g clip-path="url(#clip0_59_1416)">
 						<path
 							d="M16 2L11.45 11.22L1.28 12.69L8.64 19.87L6.9 30L16 25.22L25.1 30L23.36 19.87L30.72 12.7L20.55 11.22L16 2Z"
-							fill="black"
+							class="fill-black dark:fill-white"
 						/>
 					</g>
 					<defs>
@@ -83,7 +83,7 @@
 					<g clip-path="url(#clip0_59_1416)">
 						<path
 							d="M16 2L11.45 11.22L1.28 12.69L8.64 19.87L6.9 30L16 25.22L25.1 30L23.36 19.87L30.72 12.7L20.55 11.22L16 2Z"
-							fill="black"
+							class="fill-black dark:fill-white"
 						/>
 					</g>
 					<defs>
@@ -101,7 +101,7 @@
 					<g clip-path="url(#clip0_59_1416)">
 						<path
 							d="M16 2L11.45 11.22L1.28 12.69L8.64 19.87L6.9 30L16 25.22L25.1 30L23.36 19.87L30.72 12.7L20.55 11.22L16 2Z"
-							fill="black"
+							class="fill-black dark:fill-white"
 						/>
 					</g>
 					<defs>
@@ -119,7 +119,7 @@
 					<g clip-path="url(#clip0_59_1416)">
 						<path
 							d="M16 2L11.45 11.22L1.28 12.69L8.64 19.87L6.9 30L16 25.22L25.1 30L23.36 19.87L30.72 12.7L20.55 11.22L16 2Z"
-							fill="black"
+							class="fill-black dark:fill-white"
 						/>
 					</g>
 					<defs>
@@ -137,7 +137,7 @@
 					<g clip-path="url(#clip0_59_1416)">
 						<path
 							d="M16 2L11.45 11.22L1.28 12.69L8.64 19.87L6.9 30L16 25.22L25.1 30L23.36 19.87L30.72 12.7L20.55 11.22L16 2Z"
-							fill="black"
+							class="fill-black dark:fill-white"
 						/>
 					</g>
 					<defs>
@@ -148,11 +148,11 @@
 				</svg>
 			</div>
 			<div class="text-8xl">5.0 <span class="text-3xl"> / 5</span></div>
-			<div class="text-lg mt-4">by 52 reviews</div>
+			<div class="text-lg mt-4">in 52 reviews</div>
 		</div>
 	</div>
 	<div class=" md:basis-1">
-		<div class=" md:h-72 lg:h-64 xl:h-60 md:w-0.5 hidden md:block md:mt-52 bg-black" />
+		<div class=" md:h-72 lg:h-64 xl:h-60 md:w-0.5 hidden md:block md:mt-52 bg-black dark:bg-white" />
 	</div>
 	<div class=" md:basis-1/2">
 		<Heading

@@ -8,10 +8,10 @@ export default {
 				secondarylight: '#DBFFB6',
 				backgroundlight: '#F1FEE2',
 				outlinelight: '#000000',
-				primarydark: '#4B9500',
-				secondarydark: '#264C00',
-				backgrounddark: '#142800',
-				outlinedark: '#6E6E6E'
+				primarydark: '#397200',
+				secondarydark: '#244800',
+				backgrounddark: '#27301E',
+				outlinedark: '#000000'
 			}
 		}
 	},
