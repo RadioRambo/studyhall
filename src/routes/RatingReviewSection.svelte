@@ -1,8 +1,51 @@
 <script>
 	import Heading from './(components)/Heading.svelte';
+	import { onMount } from 'svelte';
+
+	let currentIndex = 0;
+	let reviews = [
+		{
+			author: 'Pavan Gobburi',
+			content:
+				'Very good and neat maintenance. Very comfortable place with affordable prices.Very good environment for preparation. 24*7 availability is the one which is better for Aspirants who wish to stay late. Overall a good place for preparation.'
+		},
+		{
+			author: 'MadhuPriya Gattumidhi',
+			content:
+				'Very peaceful environment to study and hygiene standards are maintained along with friendly management.'
+		},
+		{
+			author: 'Chandana Nishankara',
+			content:
+				'Peaceful ,no nuisance ,well maintained ,hygienic and Best management. They proactively try to solve any issue reported .Best Study hall in the neighborhood. Totally recommend this study hall.'
+		},
+		{
+			author: 'Karnati Sravani',
+			content:
+				'Maintenance is good. Environment is good for study. Spacious, lighting is good. Very well thought of ventilation and other arrangements. Owner is responsible and listens to the queries. Also solves the problems. Overall, management is good and this study hall is a good option at the same cost compared to other local study halls.'
+		},
+		{
+			author: 'Geetha Rajeshwari',
+			content:
+				'The most peaceful and cleanliest study hall in and around Vanasthalipuram with reasonable prices'
+		}
+	];
+
+	onMount(() => {
+		// Auto-play the slider every 3 seconds
+		const interval = setInterval(() => {
+			currentIndex = (currentIndex + 1) % reviews.length;
+		}, 3000);
+
+		return () => {
+			clearInterval(interval);
+		};
+	});
 </script>
 
-<div class="flex flex-col md:flex-row md:gap-10 lg:gap-20 md:justify-end">
+<div
+	class="flex flex-col md:flex-row md:gap-10 lg:gap-20 md:justify-end h-[1200px] sm:h-[900px] md:h-[700px] lg:h-[600px]"
+>
 	<div class="md:basis-1/4">
 		<Heading
 			heading="Ratings"
@@ -118,12 +161,14 @@
 			url="https://www.google.com/maps/place/Enlight+Study+Hall/@17.3313833,78.5686183,17z/data=!3m1!5s0x3bcba1f979886f0f:0x86c4b35602ef8431!4m8!3m7!1s0x3bcba181c59e60bb:0x6e0c77b8eaf8e33d!8m2!3d17.3313782!4d78.5711932!9m1!1b1!16s%2Fg%2F11txt65n2f?entry=ttus"
 		/>
 		<div class="mx-6 lg:ml-16">
-			<div class="max-w-lg md:max-w-xl">
-				“Peaceful , no nuisance , well maintained , hygienic and Best management. They proactively
-				try to solve any issue reported . Best Study hall in the neighborhood. Totally recommend
-				this study hall. ”
-			</div>
-			<div class="mt-4 text-lg">By Chandana Nishankara</div>
+			{#each reviews as review, i}
+				{#if i === currentIndex}
+					<div class="mb-4 text-lg">By {review.author}</div>
+					<div class="max-w-lg h-fit md:max-w-xl">
+						"{review.content}"
+					</div>
+				{/if}
+			{/each}
 		</div>
 	</div>
 </div>
