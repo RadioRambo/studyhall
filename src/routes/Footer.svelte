@@ -5,18 +5,18 @@
 	<div class="flex flex-col gap-4 md:flex-row justify-between">
 		<div>
 			<div class="">
-				<div class="mb-2">Phone:</div>
+				<div class="mb-2 font-medium">Phone:</div>
 				+91 9090909090<br /> +91 9090909090
 			</div>
 
 			<div class="mt-6">
-				<div class="mb-2">Email:</div>
+				<div class="mb-2 font-medium">Email:</div>
 				something@gmail.com
 			</div>
 		</div>
 
 		<div class="max-w-sm mt-6 md:mt-0">
-			<div class="mb-2">Address:</div>
+			<div class="mb-2 font-medium">Address:</div>
 			First floor,<br />Rhythu Bazar Road,<br /> Above Caramel Bakers, Phase I, Vanasthalipuram, Telangana,
 			500070.
 		</div>

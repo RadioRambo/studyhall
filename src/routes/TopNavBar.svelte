@@ -1,8 +1,11 @@
 <!-- TODO Add links -->
-<div class="flex bg-secondarylight gap-6 py-2 px-6 sm:px-10 mt-2 rounded-t-3xl outline outline-1 outline-outlinelight">
-	<div class="basis-1/2 sm:basis-2/5 ">Reach US</div>
+<div
+	class="flex bg-secondarylight gap-6 py-2 px-6 sm:px-10 mt-2 rounded-t-3xl outline outline-1 outline-outlinelight"
+>
+	<div class="basis-1/2 sm:basis-2/5">Reach US</div>
 	<div class="flex justify-between basis-3/5 sm:hidden">
-		<a href="x"
+		<a
+			href="https://www.google.com/maps/place/Enlight+Study+Hall/@17.3313833,78.5686183,17z/data=!3m1!5s0x3bcba1f979886f0f:0x86c4b35602ef8431!4m16!1m9!3m8!1s0x3bcba181c59e60bb:0x6e0c77b8eaf8e33d!2sEnlight+Study+Hall!8m2!3d17.3313782!4d78.5711932!9m1!1b1!16s%2Fg%2F11txt65n2f!3m5!1s0x3bcba181c59e60bb:0x6e0c77b8eaf8e33d!8m2!3d17.3313782!4d78.5711932!16s%2Fg%2F11txt65n2f?entry=ttu"
 			><svg
 				width="32"
 				height="32"
@@ -73,10 +76,66 @@
 			</a>
 		</div>
 	</div>
-	<div class="sm:flex justify-between  hidden sm:basis-2/3  ">
-		<a href="x">Location</a>
-		<a href="x">Email</a>
-		<a href="x">Call</a>
-		<a href="x">Whatsapp</a>
+	<div class="sm:flex justify-between gap-2 hidden sm:basis-2/3">
+		<a href="https://www.google.com/maps/place/Enlight+Study+Hall/@17.3313833,78.5686183,17z/data=!3m1!5s0x3bcba1f979886f0f:0x86c4b35602ef8431!4m16!1m9!3m8!1s0x3bcba181c59e60bb:0x6e0c77b8eaf8e33d!2sEnlight+Study+Hall!8m2!3d17.3313782!4d78.5711932!9m1!1b1!16s%2Fg%2F11txt65n2f!3m5!1s0x3bcba181c59e60bb:0x6e0c77b8eaf8e33d!8m2!3d17.3313782!4d78.5711932!16s%2Fg%2F11txt65n2f?entry=ttu"
+			>Location <svg
+				width="16"
+				height="16"
+				viewBox="0 0 16 16"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				class="ml-2 sm:hidden lg:inline"
+			>
+				<path
+					d="M3.5 0.5V2H12.9425L0.5 14.4425L1.5575 15.5L14 3.0575V12.5H15.5V0.5H3.5Z"
+					fill="black"
+				/>
+			</svg></a
+		>
+		<a href="x"
+			>Email<svg
+				width="16"
+				height="16"
+				viewBox="0 0 16 16"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				class="ml-2 sm:hidden lg:inline"
+			>
+				<path
+					d="M3.5 0.5V2H12.9425L0.5 14.4425L1.5575 15.5L14 3.0575V12.5H15.5V0.5H3.5Z"
+					fill="black"
+				/>
+			</svg></a
+		>
+		<a href="x"
+			>Call<svg
+				width="16"
+				height="16"
+				viewBox="0 0 16 16"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				class="ml-2 sm:hidden lg:inline"
+			>
+				<path
+					d="M3.5 0.5V2H12.9425L0.5 14.4425L1.5575 15.5L14 3.0575V12.5H15.5V0.5H3.5Z"
+					fill="black"
+				/>
+			</svg></a
+		>
+		<a href="x"
+			>Whatsapp<svg
+				width="16"
+				height="16"
+				viewBox="0 0 16 16"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				class="ml-2 sm:hidden lg:inline"
+			>
+				<path
+					d="M3.5 0.5V2H12.9425L0.5 14.4425L1.5575 15.5L14 3.0575V12.5H15.5V0.5H3.5Z"
+					fill="black"
+				/>
+			</svg></a
+		>
 	</div>
 </div>
