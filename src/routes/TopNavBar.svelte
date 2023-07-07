@@ -1,6 +1,6 @@
 <!-- TODO Add links -->
-<div class="flex bg-secondarylight gap-6 pt-2 pb-1 px-6 sm:px-10 mt-2 rounded-t-3xl outline outline-1 outline-outlinelight">
-	<div class="basis-1/2 sm:basis-2/5 text-xl">Reach US</div>
+<div class="flex bg-secondarylight gap-6 py-2 px-6 sm:px-10 mt-2 rounded-t-3xl outline outline-1 outline-outlinelight">
+	<div class="basis-1/2 sm:basis-2/5 ">Reach US</div>
 	<div class="flex justify-between basis-3/5 sm:hidden">
 		<a href="x"
 			><svg
