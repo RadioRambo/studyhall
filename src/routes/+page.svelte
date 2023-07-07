@@ -1,6 +1,7 @@
 <script>
 	import BottomNavBar from './BottomNavBar.svelte';
 	import FeaturesSection from './FeaturesSection.svelte';
+	import Footer from './Footer.svelte';
 	import HeroSection from './HeroSection.svelte';
 	import LayoutSection from './LayoutSection.svelte';
 	import RatingReviewSection from './RatingReviewSection.svelte';
@@ -9,7 +10,8 @@
 
 <TopNavBar />
 <BottomNavBar />
-<HeroSection/>
-<FeaturesSection/>
-<LayoutSection/>
-<RatingReviewSection/>
+<HeroSection />
+<FeaturesSection />
+<LayoutSection />
+<RatingReviewSection />
+<Footer />
