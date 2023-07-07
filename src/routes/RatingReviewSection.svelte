@@ -17,7 +17,7 @@
 		{
 			author: 'Chandana Nishankara',
 			content:
-				'Peaceful ,no nuisance ,well maintained ,hygienic and Best management. They proactively try to solve any issue reported .Best Study hall in the neighborhood. Totally recommend this study hall.'
+				'Peaceful, no nuisance, well maintained, hygienic and Best management. They proactively try to solve any issue reported. Best Study hall in the neighborhood. Totally recommend this study hall.'
 		},
 		{
 			author: 'Karnati Sravani',
@@ -32,7 +32,6 @@
 	];
 
 	onMount(() => {
-		// Auto-play the slider every 3 seconds
 		const interval = setInterval(() => {
 			currentIndex = (currentIndex + 1) % reviews.length;
 		}, 3000);

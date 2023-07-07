@@ -6,7 +6,7 @@
 		<div>
 			<div class="">
 				<div class="mb-2 font-medium">Phone:</div>
-				+91 9090909090<br /> +91 9090909090
+				+91 72078 23854
 			</div>
 
 			<div class="mt-6">

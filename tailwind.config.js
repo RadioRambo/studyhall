@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+	darkMode: 'class',
+	content: ['./src/**/*.{html,js,svelte,ts}', './static/**/*'],
 	theme: {
 		extend: {
 			colors: {
 				primarylight: '#B3EF76',
 				secondarylight: '#DBFFB6',
-				backgroundlight: '#F1FEE2',
+				backgroundlight: '#F8FFEF',
 				outlinelight: '#000000',
 				primarydark: '#397200',
 				secondarydark: '#244800',
