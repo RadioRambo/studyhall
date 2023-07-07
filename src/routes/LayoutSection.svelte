@@ -1,10 +1,10 @@
-<div class="text-4xl font-semibold mx-6 mb-10 mt-24">Layout</div>
+<script>
+	import Heading from './(components)/Heading.svelte';
+</script>
+
+<Heading heading="Layout" />
 <div class="flex justify-center mx-2 md:mx-6">
-	<svg class="h-fit w-fit"
-		viewBox="0 0 1121 693"
-		fill="none"
-		xmlns="http://www.w3.org/2000/svg"
-	>
+	<svg class="h-fit w-fit" viewBox="0 0 1121 693" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path
 			d="M25 0.5H1096C1109.53 0.5 1120.5 11.469 1120.5 25V668C1120.5 681.531 1109.53 692.5 1096 692.5H25C11.469 692.5 0.5 681.531 0.5 668V25C0.5 11.469 11.469 0.5 25 0.5Z"
 			class="fill-secondarylight"

@@ -1,9 +1,12 @@
 <script>
 	import FeatureSectionCard from './(components)/FeatureSectionCard.svelte';
+	import Heading from './(components)/Heading.svelte';
 </script>
 
-<div class="text-4xl font-semibold mx-6 my-10">Facilities Available</div>
-<div class="grid grid-cols-1 gap-4 xl:gap-8 mx-6 justify-items-center md:grid-cols-2 lg:grid-cols-3">
+<Heading heading="Facilities Available" />
+<div
+	class="grid grid-cols-1 gap-4 xl:gap-8 mx-6 justify-items-center md:grid-cols-2 lg:grid-cols-3"
+>
 	<FeatureSectionCard
 		heading="Unlimited high speed internet"
 		description="With alternate backup connection for unseen situations"
