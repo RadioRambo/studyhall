@@ -1,6 +1,48 @@
 <script>
 	import Heading from './(components)/Heading.svelte';
-	import { onMount } from 'svelte';
+	import { fly } from 'svelte/transition';
+	import { onMount, afterUpdate, onDestroy } from 'svelte';
+
+	let count = 0;
+	let incrementInterval;
+	let isVisible = false;
+	let isClass = false;
+
+	function startIncrement() {
+		incrementInterval = setInterval(() => {
+			count += 0.1;
+			count = Number(count.toFixed(1));
+		}, 40);
+	}
+
+	function stopIncrement() {
+		clearInterval(incrementInterval);
+	}
+
+	onMount(() => {
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					startIncrement();
+					isVisible = true;
+					observer.disconnect();
+					setTimeout(() => {
+						isClass = true;
+					}, 2800);
+				}
+			});
+		});
+
+		observer.observe(document.getElementById('rating'));
+	});
+
+	afterUpdate(() => {
+		if (count >= 5) {
+			stopIncrement();
+		}
+	});
+
+	onDestroy(stopIncrement);
 
 	let currentIndex = 0;
 	let reviews = [
@@ -52,7 +94,7 @@
 			url="https://www.google.com/maps/place/Enlight+Study+Hall/@17.3313833,78.5686183,17z/data=!3m1!5s0x3bcba1f979886f0f:0x86c4b35602ef8431!4m8!3m7!1s0x3bcba181c59e60bb:0x6e0c77b8eaf8e33d!8m2!3d17.3313782!4d78.5711932!9m1!1b1!16s%2Fg%2F11txt65n2f?entry=ttus"
 		/>
 		<div class="mx-6 lg:ml-16">
-			<div class="flex gap-3">
+			<div class="flex gap-3 {isClass ? 'animate-pulse' : ''}">
 				<svg
 					width="32"
 					height="32"
@@ -146,12 +188,17 @@
 					</defs>
 				</svg>
 			</div>
-			<div class="text-8xl">5.0 <span class="text-3xl"> / 5</span></div>
+			<div class="text-8xl" id="rating">
+				<span class={isClass ? 'animate-pulse' : ''}>{count.toFixed(1)}</span>
+				<span class="text-3xl"> / 5</span>
+			</div>
 			<div class="text-lg mt-4">in 52 reviews</div>
 		</div>
 	</div>
 	<div class=" md:basis-1">
-		<div class=" md:h-72 lg:h-64 xl:h-60 md:w-0.5 hidden md:block md:mt-52 bg-black dark:bg-white" />
+		<div
+			class=" md:h-72 lg:h-64 xl:h-60 md:w-0.5 hidden md:block md:mt-52 bg-black dark:bg-white"
+		/>
 	</div>
 	<div class=" md:basis-1/2">
 		<Heading
@@ -159,11 +206,13 @@
 			subheading="as in Google Maps"
 			url="https://www.google.com/maps/place/Enlight+Study+Hall/@17.3313833,78.5686183,17z/data=!3m1!5s0x3bcba1f979886f0f:0x86c4b35602ef8431!4m8!3m7!1s0x3bcba181c59e60bb:0x6e0c77b8eaf8e33d!8m2!3d17.3313782!4d78.5711932!9m1!1b1!16s%2Fg%2F11txt65n2f?entry=ttus"
 		/>
-		<div class="mx-6 lg:ml-16">
+		<div class="mx-6 lg:ml-16 overflow-hidden">
 			{#each reviews as review, i}
 				{#if i === currentIndex}
-					<div class="mb-4 text-lg">By {review.author}</div>
-					<div class="max-w-lg h-fit md:max-w-xl">
+					<div class="mb-4 text-lg" in:fly={{ x: 200, duration: 1000, delay: 200 }}>
+						By {review.author}
+					</div>
+					<div class="max-w-lg h-fit md:max-w-xl" in:fly={{ x: 100, duration: 1000, delay: 200 }}>
 						"{review.content}"
 					</div>
 				{/if}

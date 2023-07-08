@@ -21,7 +21,7 @@
 				</g>
 			</svg></a
 		>
-		<a href="mailto:email@example.com?subject=Hello"
+		<a href="mailto:enlightstudyhall@gmail.com?subject=Hello"
 			><svg
 				width="32"
 				height="32"
@@ -92,7 +92,7 @@
 				/>
 			</svg></a
 		>
-		<a href="mailto:email@example.com?subject=Hello"
+		<a href="mailto:enlightstudyhall@gmail.com?subject=Hello"
 			>Email<svg
 				width="16"
 				height="16"

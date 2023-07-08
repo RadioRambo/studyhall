@@ -11,14 +11,16 @@
 
 			<div class="mt-6">
 				<div class="mb-2 font-medium">Email:</div>
-				something@gmail.com
+				enlightstudyhall@gmail.com
 			</div>
 		</div>
-
-		<div class="max-w-sm mt-6 md:mt-0">
+		<img class="order-3 md:order-2 md:hidden lg:block md:-mt-28" src="logo.webp" alt="logo" />
+		<div class="order-2 md:order-3 max-w-sm mt-6 md:mt-0">
 			<div class="mb-2 font-medium">Address:</div>
-			First floor,<br />Rhythu Bazar Road,<br /> Above Caramel Bakers, Phase I, Vanasthalipuram, Telangana,
-			500070.
+			<div>
+				First floor,<br />Rhythu Bazar Road,<br /> Above Caramel Bakers, Phase I, Vanasthalipuram, Telangana,
+				500070.
+			</div>
 		</div>
 	</div>
 </div>
