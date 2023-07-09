@@ -1,5 +1,5 @@
 <div
-	class="flex bg-secondarylight dark:bg-secondarydark gap-6 py-2 px-6 sm:px-10 mt-2 rounded-t-3xl outline outline-1 outline-outlinelight dark:outline-outlinedark"
+	class="flex bg-secondarylight dark:bg-secondarydark gap-6 py-2 px-6 sm:px-10 mt-2 rounded-t-3xl outline outline-2 outline-outlinelight dark:outline-outlinedark"
 >
 	<div class="basis-1/2 sm:basis-2/5">Reach Us</div>
 	<div class="flex justify-between basis-3/5 sm:hidden">
