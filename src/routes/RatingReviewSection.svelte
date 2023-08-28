@@ -192,7 +192,7 @@
 				<span class={isClass ? 'animate-pulse' : ''}>{count.toFixed(1)}</span>
 				<span class="text-3xl"> / 5</span>
 			</div>
-			<div class="text-lg mt-4">in 52 reviews</div>
+			<div class="text-lg mt-4">in 58 reviews</div>
 		</div>
 	</div>
 	<div class=" md:basis-1">
