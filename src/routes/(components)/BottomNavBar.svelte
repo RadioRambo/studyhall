@@ -1,10 +1,16 @@
+<script>
+  export let pageName = "";
+  export let otherPageLink = "";
+  export let otherPageLinkURL = "";
+</script>
+
 <div
   class="flex bg-secondarylight dark:bg-secondarydark gap-6 py-2 px-6 sm:px-10 mt-[2px] rounded-b-3xl outline outline-2 outline-outlinelight dark:outline-outlinedark"
 >
-  <div class="font-bold basis-1/2 sm:basis-2/5">ENLIGHT HOME TUITIONS</div>
+  <div class="font-bold basis-1/2 sm:basis-2/5">{pageName}</div>
   <div class="flex justify-end basis-3/5 text-base">
-    <a href="studyhall" class="mt-1"
-      >ENLIGHT STUDY HALL<svg
+    <a href={otherPageLinkURL} class="mt-1"
+      >{otherPageLink}<svg
         width="12"
         height="12"
         viewBox="0 0 16 16"
