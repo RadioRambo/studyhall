@@ -3,7 +3,7 @@
 </script>
 
 <BottomNavBar
-  pageName="ENLIGHT HOME TUITION"
+  pageName="ENLIGHT HOME TUITIONS"
   otherPageLink="ENLIGHT STUDY HALL"
   otherPageLinkURL="studyhall"
 /><slot />

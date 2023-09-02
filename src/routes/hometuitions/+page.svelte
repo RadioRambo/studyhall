@@ -1,7 +1,7 @@
 <script>
-  import Heading from "../(components)/Heading.svelte";
   import HeroSection from "../(components)/HeroSection.svelte";
   import HomeTuitionsFeaturesSection from "./HomeTuitionsFeaturesSection.svelte";
+  import ParentsForm from "./ParentsForm.svelte";
 </script>
 
 <HeroSection
