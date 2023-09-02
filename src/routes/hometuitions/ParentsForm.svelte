@@ -1,7 +1,41 @@
+<script>
+  async function onSubmit(e) {
+    console.log("clicked");
+    // Prevent the default form submission behavior
+    e.preventDefault();
+
+    // Gather the form data
+    const formData = new FormData(e.target);
+    const data = {};
+    for (let field of formData) {
+      const [key, value] = field;
+      data[key] = value;
+    }
+    console.log(data);
+    // Send a POST request to the specified URL with the form data
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbypHd1ys7JUhyy0WhdZoJu_5ndtTBrJ9iYjQYJ35uADzSPD2ncLScuVmcRU0Q_vC4dfpg/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(data),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      const result = await response.json();
+      console.log(result);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+</script>
+
 <div class="mx-6">
   <h1 class="font-semibold text-3xl mt-10">For Parents</h1>
   <h2 class="mb-10">If you are looking for a tutor for your kid</h2>
-  <form class="mx-0 md:ml-6" action="submit_form.php" method="POST">
+  <form on:submit|preventDefault={onSubmit} class="mx-0 md:ml-6">
     <input
       class="bg-secondarylight outline outline-2 outline-outlinelight dark:outline-outlinedark rounded-3xl placeholder:text-black placeholder:font-medium placeholder:text-xl px-6 py-2 mb-4 w-[55vw] max-w-[300px] lg:max-w-none lg:w-80"
       placeholder="Name"
