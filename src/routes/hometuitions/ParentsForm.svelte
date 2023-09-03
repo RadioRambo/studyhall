@@ -3,11 +3,9 @@
   let onError = false;
   let isSubmitting = false;
   async function onSubmit(e) {
-    // Prevent the default form submission behavior
     e.preventDefault();
     isSubmitting = true;
 
-    // Gather the form data
     const formData = new FormData(e.target);
     const data = {};
     for (let field of formData) {
@@ -22,12 +20,19 @@
           body: formData,
         }
       );
+      await fetch("https://ntfy.sh/dKpVPfKAhpfHFWw3", {
+        method: "POST",
+        body: "New PARENT posted. Check it",
+      });
       const result = await response.json();
-
       if (result.result === "success") {
         onSuccess = true;
       }
     } catch (error) {
+      fetch("https://ntfy.sh/dKpVPfKAhpfHFWw3", {
+        method: "POST",
+        body: JSON.stringify(data),
+      });
       onError = true;
       console.error("Error:", error);
     } finally {
