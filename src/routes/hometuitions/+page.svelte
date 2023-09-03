@@ -23,7 +23,6 @@
       <line x1="0.5" y1="600" x2="0.5" stroke="black" />
     </svg>
   </div>
-
   <TutorsForm />
 </div>
 <HomeTuitionsFeaturesSection />
