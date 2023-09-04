@@ -7,6 +7,7 @@
       <div class="">
         <div class="mb-2 font-medium">Phone:</div>
         <div>+91 72078 23854</div>
+        <div>+91 94924 26288</div>
       </div>
 
       <div class="mt-6 break-words">
