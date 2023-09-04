@@ -1,3 +1,7 @@
+<script>
+  import { page } from "$app/stores";
+  console.log($page.url.pathname);
+</script>
 <div
   class="flex bg-secondarylight dark:bg-secondarydark gap-6 py-1 px-6 sm:px-10 mt-2 rounded-t-3xl outline outline-2 outline-outlinelight dark:outline-outlinedark"
 >
@@ -38,7 +42,10 @@
         </g>
       </svg>
     </a>
-    <a href="tel:+917207823854"
+    <a
+      href="tel:{$page.url.pathname === '/hometuitions'
+        ? '+919492426288'
+        : '+917207823854'}"
       ><svg
         width="28"
         height="28"
@@ -107,7 +114,10 @@
         />
       </svg></a
     >
-    <a href="tel:+917207823854"
+    <a
+      href="tel:{$page.url.pathname === '/hometuitions'
+        ? '+919492426288'
+        : '+917207823854'}"
       >Call<svg
         width="16"
         height="16"
