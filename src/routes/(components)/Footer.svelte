@@ -16,7 +16,7 @@
       </div>
     </div>
     <img
-      class="order-3 md:order-2 ml-4 md:ml-0 md:hidden lg:block md:-mt-28"
+			class="order-3 md:order-2 md:hidden lg:block md:-mt-28"
       src="logo.webp"
       alt="logo"
       width="300"
