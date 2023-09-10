@@ -1,23 +1,7 @@
-<!-- <div class="flex flex-col md:flex-row mt-10 gap-6 justify-center">
-  <a href="studyhall">
-    <div
-      class="w-[95vw] md:w-[45vw] h-[70vh] bg-secondarylight dark:bg-secondarydark rounded-3xl p-4 md:p-10 outline outline-2 outline-outlinelight dark:outline-outlinedark"
-    >
-      <div class="font-medium text-6xl md:text-8xl">ENLIGHT STUDY HALL</div>
-    </div>
-  </a>
-  <a href="hometuitions">
-    <div
-      class="w-[95vw] md:w-[45vw] h-[70vh] bg-secondarylight dark:bg-secondarydark rounded-3xl p-4 md:p-10 outline outline-2 outline-outlinelight dark:outline-outlinedark justify-end"
-    >
-      <div class="font-medium text-6xl md:text-8xl">ENLIGHT HOME TUITIONS</div>
-    </div>
-  </a>
-</div> -->
 <div class="mt-20">
   <a href="studyhall">
     <div
-      class="mx-2 md:mx-6 mt-10 bg-secondarylight dark:bg-secondarydark rounded-3xl p-10 outline outline-2 outline-outlinelight dark:outline-outlinedark"
+      class="mx-2 md:mx-6 mt-10 bg-secondarylight dark:bg-secondarydark rounded-3xl p-10 outline outline-2 outline-outlinelight dark:outline-outlinedark hover:bg-primarylight active:bg-lime-400"
     >
       <div class="font-semibold text-4xl mb-12">ENLIGHT STUDY HALL</div>
       <div class="font-normal max-w-4xl">
@@ -27,7 +11,7 @@
     </div>
   </a><a href="hometuitions">
     <div
-      class=" mx-2 md:mx-6 mt-10 bg-secondarylight dark:bg-secondarydark rounded-3xl p-10 outline outline-2 outline-outlinelight dark:outline-outlinedark"
+      class=" mx-2 md:mx-6 mt-10 bg-secondarylight dark:bg-secondarydark rounded-3xl p-10 outline outline-2 outline-outlinelight dark:outline-outlinedark hover:bg-primarylight active:bg-lime-400"
     >
       <div class="font-semibold text-4xl mb-12">ENLIGHT HOME TUITIONS</div>
       <div class="font-normal max-w-4xl">

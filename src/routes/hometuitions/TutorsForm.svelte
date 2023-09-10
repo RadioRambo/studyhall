@@ -111,7 +111,7 @@
     /><br />
 
     <button
-      class="bg-primarylight w-fit rounded-3xl outline outline-2 outline-outlinelight dark:outline-outlinedark px-6 py-2 font-semibold hover:bg-lime-400 active:bg-lime-600"
+      class="bg-primarylight w-fit rounded-3xl outline outline-2 outline-outlinelight dark:outline-outlinedark px-6 py-2 font-semibold hover:bg-lime-400 active:bg-lime-500"
       type="submit"
       disabled={isSubmitting}
     >
